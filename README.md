@@ -1,10 +1,8 @@
-orgchart
-========
+# orgchart
 
 Web, Mobile, and Print Friendly Organization Chart
 
-Basic setup
---------
+## Basic setup
 
 ```html
 <div class="orgchart">
@@ -21,8 +19,7 @@ Basic setup
 </div>
 ```
 
-Staff Attribute CSS Classes
---------
+## Staff Attribute CSS Classes
 
 The following attributes will need to be specified for staff with their own boxes.
 ```html
@@ -32,8 +29,7 @@ The following attributes will need to be specified for staff with their own boxe
 <span class="url"><a href="#"><img src="images/page_fold.gif" alt="Marketing Group Web Site"></a></span>
 ```
 
-Staff Level CSS Classes
---------
+## Staff Level CSS Classes
 
 Use the following div tags to wrap around the staff attributes.
 ```html
@@ -44,10 +40,9 @@ Use the following div tags to wrap around the staff attributes.
 <div class="staff"> for everyone else
 ```
 
-Group CSS Class
---------
+## Group CSS Class
 
-It's not feasible to display a box for every staff on each organization chart.  In these cases, use ``html <div class="group">`` and a nested ``html <ul>`` for displaying a list of staff who do not have their own box.  Use ``html <span class="org">`` for the group name.
+It's not feasible to display a box for every staff on each organization chart.  In these cases, use ``<div class="group">`` and a nested ``<ul>`` for displaying a list of staff who do not have their own box.  Use ``<span class="org">`` for the group name.
 
 ```html
 <div class="group"><span class="org">Group 1</span>
@@ -59,15 +54,14 @@ It's not feasible to display a box for every staff on each organization chart.  
 </div>
 ```
 
-Org Chart Specific CSS Classes
---------
+## Org Chart Specific CSS Classes
 
 ### Single Direct Report Style
-In cases where there is only one direct report for the org chart, use ``html <ul class="col1">``. See Strategic Planning organization chart.
+In cases where there is only one direct report for the org chart, use ``<ul class="col1">``. See Strategic Planning organization chart.
 
 ### Specifying the number of boxes for each row
 
-For organization charts with more than two rows of direct reports, add the following classes to the ``html <ul>`` that contains the staff boxes.  The number indicates the number of boxes intended for each row.
+For organization charts with more than two rows of direct reports, add the following classes to the ``<ul>`` that contains the staff boxes.  The number indicates the number of boxes intended for each row.
 
 ```html
 <ul class="row1">
@@ -78,4 +72,4 @@ For organization charts with more than two rows of direct reports, add the follo
 <ul class="row6">
 ```
 
-Note: When specifying a row number, add an extra ``</ul> <ul>`` (in that order) after the last box in the row. If you don't, the main org chart line won't display.
+*Note:* When specifying a row number, add an extra ``</ul> <ul>`` (in that order) after the last box in the row. If you don't, the main org chart line won't display.
