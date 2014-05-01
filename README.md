@@ -47,7 +47,7 @@ Use the following div tags to wrap around the staff attributes.
 Group CSS Class
 --------
 
-It's not feasible to display a box for every staff on each organization chart.  In these cases, use ``<div class="group">`` and a nested ``<ul>`` for displaying a list of staff who do not have their own box.  Use ``<span class="org">`` for the group name.
+It's not feasible to display a box for every staff on each organization chart.  In these cases, use ``html <div class="group">`` and a nested ``html <ul>`` for displaying a list of staff who do not have their own box.  Use ``html <span class="org">`` for the group name.
 
 ```html
 <div class="group"><span class="org">Group 1</span>
@@ -63,11 +63,11 @@ Org Chart Specific CSS Classes
 --------
 
 ### Single Direct Report Style
-In cases where there is only one direct report for the org chart, use ``<ul class="col1">``. See Strategic Planning organization chart.
+In cases where there is only one direct report for the org chart, use ``html <ul class="col1">``. See Strategic Planning organization chart.
 
 ### Specifying the number of boxes for each row
 
-For organization charts with more than two rows of direct reports, add the following classes to the ``<ul>`` that contains the staff boxes.  The number indicates the number of boxes intended for each row.
+For organization charts with more than two rows of direct reports, add the following classes to the ``html <ul>`` that contains the staff boxes.  The number indicates the number of boxes intended for each row.
 
 ```html
 <ul class="row1">
