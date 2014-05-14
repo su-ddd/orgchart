@@ -61,7 +61,7 @@
 .orgchart > ul.col1 li ul {background-image: none; padding-top: 0px;}
 .orgchart > ul.col1 > li > ul:last-child {background-image: none; padding-top: 0px;}
 
-.orgchart > ul > li > ul[class*=row] {background-image: url("../images/gray.gif"); background-position: top center; background-repeat: repeat-y;}
+.orgchart > ul > li > ul[class*=row] {background-image: url("../images/gray.gif"); background-position: top center; background-repeat: repeat-y; margin-left: -3px;}
 
 .orgchart > ul > li > ul.row1 > li:first-child {margin-left: 155px;}
 .orgchart > ul > li > ul.row1 > li:nth-child(1) {background-image: url("../images/connect_row.gif");}
@@ -82,8 +82,11 @@
 .orgchart > ul > li > ul.row6:nth-child(2) > li:nth-child(6) {background-image: url("../images/connect_last.gif");}
 .orgchart > ul > li > ul.row6 > li:nth-child(4) {background-image: url("../images/connect_row.gif");}
 
+.orgchart > ul > li > ul:last-child > li {margin-left: -2px;}
+.orgchart > ul > li > ul:last-child > li:nth-child(1) {background-image: url("../images/connect_last.gif");}
+.orgchart > ul > li > ul:last-child > li:nth-child(2) {background-image: url("../images/connect_last.gif");}
 .orgchart > ul > li > ul:last-child > li:nth-child(3) {background-image: url("../images/connect_last.gif");}
-.orgchart > ul > li > ul:last-child {background-image: url("../images/gray.gif"); background-position: top center; background-repeat: no-repeat;;}
+.orgchart > ul > li > ul:last-child {background-image: url("../images/gray.gif"); background-position: top center; background-repeat: no-repeat;}
 
 @media screen and (max-width: 979px) {
   /* IT Services Organization Charts */
