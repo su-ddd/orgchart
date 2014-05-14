@@ -3,6 +3,7 @@
 Web, Mobile, and Print Friendly Organization Chart
 
 ## Basic setup
+See [Basic Organization Chart](basic.html) for code example.
 
 ```html
 <div class="orgchart">
