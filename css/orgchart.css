@@ -1,3 +1,4 @@
+/* General */
 .orgchart {font-size: 1em; line-height: 1.6em; margin: 0px auto; padding: 0px; text-align: center; color: #3f3c30; width: auto;}
 .orgchart a:hover, .orgchart a:active {color: #820000;}
 .orgchart .name a {color: #565347; text-decoration: none; border: none;}
@@ -12,6 +13,7 @@
 .orgchart li li li {display: list-item; margin: 0px; padding: 10px 0px 0px 5px; text-align: right; background-image: url("../images/connect.gif"); background-position: top left; background-repeat: no-repeat; border-top: none;}
 .orgchart li li li:last-child {background-image: url("../images/connect_last.gif"); background-position: top left; background-repeat: repeat-y; border-top: none;}
 
+/* Roles, Group, Organization, URL */
 .orgchart .president {position: relative; display: block; text-align: center; border: 10px double #666; padding: 5px 10px; border-radius: 5px; background-color: #fff;}
 .orgchart li .president {margin: 0px auto; width: 113px;}
 .orgchart .vp {position: relative; display: block; text-align: center; border: 8px double #666; padding: 5px 10px; border-radius: 5px; background-color: #fff;}
@@ -39,7 +41,6 @@
 .orgchart li li li .group {width: 120px;}
 .orgchart li li li li .group {width: 106px;}
 .orgchart li li li li li .group {width: 91px;}
-
 .orgchart .group .name a.stanfordwho {border-bottom: 1px dotted #81785a;}
 .orgchart .group .org {display: block; font-weight: bold;}
 .orgchart .group .org sup {font-weight: normal;}
@@ -54,9 +55,11 @@
 .orgchart .url {position: absolute; display: block; bottom: 0px; right: 0px; width: 15px; height: 15px;}
 .orgchart .url a {border: none;}
 
+/* Key */
 .key {font-size: 12px; color: #3f3c30; margin: 0px; padding: 10px 0px;}
 .key li {list-style-type: none; list-style-image: none; margin: 0px; padding: 0px;}
 
+/* Line connector behavior */
 .orgchart > ul.col1 li li {margin-top: 0px;}
 .orgchart > ul.col1 li ul {background-image: none; padding-top: 0px;}
 .orgchart > ul.col1 > li > ul:last-child {background-image: none; padding-top: 0px;}
@@ -88,6 +91,7 @@
 .orgchart > ul > li > ul:last-child > li:nth-child(3) {background-image: url("../images/connect_last.gif");}
 .orgchart > ul > li > ul:last-child {background-image: url("../images/gray.gif"); background-position: top center; background-repeat: no-repeat;}
 
+/* Mobile CSS */
 @media screen and (max-width: 979px) {
   /* IT Services Organization Charts */
   .orgchart li {display: block; width: auto !important;}
@@ -120,6 +124,7 @@
   .orgchart > ul > li > ul:last-child > li:last-child {background-image: url("../images/connect_last.gif") !important;}
 }
 
+/* Print CSS */
 @media print {
   .orgchart {font-size: 10px; background: #fff; position: absolute; top: 20px; left: 0; width: 100%; height: 50%; z-index: 50;}
   .orgchart li {line-height: 15px;}
