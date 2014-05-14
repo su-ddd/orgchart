@@ -56,8 +56,8 @@
 .orgchart .url a {border: none;}
 
 /* Key */
-.key {font-size: 12px; color: #3f3c30; margin: 0px; padding: 10px 0px;}
-.key li {list-style-type: none; list-style-image: none; margin: 0px; padding: 0px;}
+ul.key {text-align: left; color: #3f3c30; margin: 2em 0 0 0; padding: 0;}
+ul.key li {display: block; list-style-type: none; list-style-image: none; margin: 0px; padding: 0px;}
 
 /* Line connector behavior */
 .orgchart > ul.col1 li li {margin-top: 0px;}
