@@ -57,7 +57,7 @@ It's not feasible to display a box for every staff on each organization chart.  
 ## Org Chart Specific CSS Classes
 
 ### Single Direct Report Style
-In cases where there is only one direct report for the org chart, use ``<ul class="col1">``. See Strategic Planning organization chart.
+In cases where there is only one direct report for the org chart, use ``<ul class="col1">``. See [Single Column Layout](basic-col1.html) for code example.
 
 ### Specifying the number of boxes for each row
 
