@@ -56,7 +56,7 @@
 .orgchart .url a {border: none;}
 
 /* Key */
-ul.key {text-align: left; color: #3f3c30; margin: 2em 0 0 0; padding: 0;}
+ul.key {display: block; text-align: left; color: #3f3c30; margin: 2em 0 0 0; padding: 0;}
 ul.key li {display: block; list-style-type: none; list-style-image: none; margin: 0px; padding: 0px;}
 
 /* Line connector behavior */
@@ -126,7 +126,7 @@ ul.key li {display: block; list-style-type: none; list-style-image: none; margin
 
 /* Print CSS */
 @media print {
-  .orgchart {font-size: 10px; background: #fff; position: absolute; top: 20px; left: 0; width: 100%; height: 50%; z-index: 50;}
+  .orgchart {font-size: 10px; background: #fff; position: absolute; top: 0; left: 0; width: 100%; height: 50%; z-index: 50;}
   .orgchart li {line-height: 15px;}
   .orgchart li img {display: none;}
   .orgchart li a {border: none;}
@@ -156,5 +156,5 @@ ul.key li {display: block; list-style-type: none; list-style-image: none; margin
   .orgchart > ul > li > ul.row3 > li:last-child {margin-right: 116px;}
   .orgchart > ul > li > ul.row5 > li:last-child {margin-right: 116px;}
   
-  .key {font-size: 10px; background: #fff; position: absolute; bottom: 0; left: 0; z-index: 100;}
+  ul.key {font-size: 10px;}
 }
