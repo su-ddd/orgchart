@@ -1,9 +1,9 @@
-# orgchart
-
-Web, Mobile, and Print Friendly Organization Chart
+## Example Pages
+* [Basic layout](basic.html)
+* [Single column layout](basic-col1.html)
+* [Advanced layout with organization links](advanced.html)
 
 ## Basic setup
-See [Basic Organization Chart](basic.html) for code example.
 
 ```html
 <div class="orgchart">
@@ -27,7 +27,7 @@ The following attributes will need to be specified for staff with their own boxe
 <span class="name">John Doe</span>
 <span class="role">Manager</span>
 <span class="org">Marketing</span>
-<span class="url"><a href="#"><img src="images/page_fold.gif" alt="Marketing Group Web Site"></a></span>
+<span class="url"><a href="#"><img src="images/page_fold.gif" alt="Group Web Site"></a></span>
 ```
 
 ## Staff Level CSS Classes
@@ -58,7 +58,7 @@ It's not feasible to display a box for every staff on each organization chart.  
 ## Org Chart Specific CSS Classes
 
 ### Single Direct Report Style
-In cases where there is only one direct report for the org chart, use ``<ul class="col1">``. See [Single Column Layout](basic-col1.html) for code example.
+In cases where there is only one direct report for the org chart, use ``<ul class="col1">``.
 
 ### Specifying the number of boxes for each row
 
