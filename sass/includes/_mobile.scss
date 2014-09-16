@@ -1,0 +1,32 @@
+/* Mobile CSS */
+@media screen and (max-width: 979px) {
+  /* IT Services Organization Charts */
+  .orgchart li {display: block; width: auto !important;}
+  .orgchart li ul {background-image: none !important;}
+  .orgchart > ul > li > ul > li {margin: 0px 0px 0px 10px !important;}
+  .orgchart li li {margin: 0px 0px 0px 10px; padding: 10px 0px 0px 10px; text-align: right; background-image: url("../images/connect.gif"); background-repeat: repeat-y; border-top: none;}
+  .orgchart li li:last-child {background-image: url("../images/connect_last.gif"); background-repeat: no-repeat; border-top: none; margin-right: 0px;}
+  .orgchart li li li {padding: 10px 0px 0px 10px;}
+  .orgchart .vp {margin: 0px; padding: 3px 10px; width: auto !important;}
+  .orgchart .executive {margin: 0px; padding: 3px 10px; width: auto !important;}
+  .orgchart .director {padding: 3px 10px; width: auto !important;}
+  .orgchart .manager {padding: 3px 10px; width: auto !important;}
+  .orgchart .staff {padding: 3px 10px; width: auto !important;}
+  .orgchart .group {padding: 3px 10px; width: auto !important;}
+  .orgchart .group ul li {display: inline-block !important; margin: 0px 5px; line-height: 15px; vertical-align: bottom;}
+  .orgchart .name {display: inline-block; margin: 0px; border-bottom: none;}
+  .orgchart .role {display: inline-block; margin: 0px;}
+  .orgchart .role:before {content: "(";}
+  .orgchart .role:after {content: ")";}
+  .orgchart .org {display: block; margin: 0px;}
+  .orgchart .suborg {display: block; margin: 0.5em 0px 0px 0px;}
+  
+  .orgchart > ul > li > ul[class*=row] > li:nth-child(1) {background-image: url("../images/connect.gif") !important;}
+  .orgchart > ul > li > ul[class*=row] > li:nth-child(2) {background-image: url("../images/connect.gif") !important;}
+  .orgchart > ul > li > ul[class*=row] > li:nth-child(3) {background-image: url("../images/connect.gif") !important;}
+  .orgchart > ul > li > ul[class*=row] > li:nth-child(4) {background-image: url("../images/connect.gif") !important;}
+  .orgchart > ul > li > ul[class*=row] > li:last-child {background-image: url("../images/connect.gif") !important;}
+  
+  .orgchart > ul > li > ul:last-child > li:nth-child(3) {background-image: url("../images/connect.gif") !important;}
+  .orgchart > ul > li > ul:last-child > li:last-child {background-image: url("../images/connect_last.gif") !important;}
+}

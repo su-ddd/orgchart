@@ -1,160 +1,829 @@
+/* line 1, ../sass/includes/_base.scss */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+}
+
 /* General */
-.orgchart {font-size: 1em; line-height: 1.6em; margin: 0px auto; padding: 0px; text-align: center; color: #3f3c30; width: auto;}
-.orgchart a:hover, .orgchart a:active {color: #820000;}
-.orgchart .name a {color: #565347; text-decoration: none; border: none;}
-.orgchart .name a:hover, .orgchart .name a:active {color: #820000;}
-.orgchart img {border: none;}
-.orgchart ul {margin: 0px; padding: 0px; background-image: none;}
-.orgchart li {display: inline-block; list-style-type: none; list-style-image: none; margin: 0px; padding: 0px; vertical-align: top; zoom: 1; *display: inline;}
-.orgchart li ul {background-image: url("../images/gray.gif"); background-position: top center; background-repeat: no-repeat;}
-.orgchart li li {margin: 10px -1px 0px -3px; padding: 10px 5px 10px 5px; text-align: right; background-image: url("../images/connect_last.gif"); background-position: top left; background-repeat: no-repeat; border-top: 1px solid #666;}
-.orgchart li > ul > li:last-child {border-top: none;}
-.orgchart li li ul {margin: 0px; padding: 0px 0px 0px 10px; background-image: none;}
-.orgchart li li li {display: list-item; margin: 0px; padding: 10px 0px 0px 5px; text-align: right; background-image: url("../images/connect.gif"); background-position: top left; background-repeat: no-repeat; border-top: none;}
-.orgchart li li li:last-child {background-image: url("../images/connect_last.gif"); background-position: top left; background-repeat: repeat-y; border-top: none;}
+/* line 2, ../sass/includes/_styles.scss */
+.orgchart {
+  font-size: 1em;
+  line-height: 1.6em;
+  margin: 0px auto;
+  padding: 0px;
+  text-align: center;
+  color: #3f3c30;
+  width: auto;
+}
+
+/* line 3, ../sass/includes/_styles.scss */
+.orgchart a:hover, .orgchart a:active {
+  color: #820000;
+}
+
+/* line 4, ../sass/includes/_styles.scss */
+.orgchart .name a {
+  color: #565347;
+  text-decoration: none;
+  border: none;
+}
+
+/* line 5, ../sass/includes/_styles.scss */
+.orgchart .name a:hover, .orgchart .name a:active {
+  color: #820000;
+}
+
+/* line 6, ../sass/includes/_styles.scss */
+.orgchart img {
+  border: none;
+}
+
+/* line 7, ../sass/includes/_styles.scss */
+.orgchart ul {
+  margin: 0px;
+  padding: 0px;
+  background-image: none;
+}
+
+/* line 8, ../sass/includes/_styles.scss */
+.orgchart li {
+  display: inline-block;
+  list-style-type: none;
+  list-style-image: none;
+  margin: 0px;
+  padding: 0px;
+  vertical-align: top;
+  zoom: 1;
+  *display: inline;
+}
+
+/* line 9, ../sass/includes/_styles.scss */
+.orgchart li ul {
+  background-image: url("../images/gray.gif");
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+/* line 10, ../sass/includes/_styles.scss */
+.orgchart li li {
+  margin: 10px -1px 0px -3px;
+  padding: 10px 5px 10px 5px;
+  text-align: right;
+  background-image: url("../images/connect_last.gif");
+  background-position: top left;
+  background-repeat: no-repeat;
+  border-top: 1px solid #666666;
+}
+
+/* line 11, ../sass/includes/_styles.scss */
+.orgchart li > ul > li:last-child {
+  border-top: none;
+}
+
+/* line 12, ../sass/includes/_styles.scss */
+.orgchart li li ul {
+  margin: 0px;
+  padding: 0px 0px 0px 10px;
+  background-image: none;
+}
+
+/* line 13, ../sass/includes/_styles.scss */
+.orgchart li li li {
+  display: list-item;
+  margin: 0px;
+  padding: 10px 0px 0px 5px;
+  text-align: right;
+  background-image: url("../images/connect.gif");
+  background-position: top left;
+  background-repeat: no-repeat;
+  border-top: none;
+}
+
+/* line 14, ../sass/includes/_styles.scss */
+.orgchart li li li:last-child {
+  background-image: url("../images/connect_last.gif");
+  background-position: top left;
+  background-repeat: repeat-y;
+  border-top: none;
+}
 
 /* Roles, Group, Organization, URL */
-.orgchart .president {position: relative; display: block; text-align: center; border: 10px double #666; padding: 5px 10px; border-radius: 5px; background-color: #fff;}
-.orgchart li .president {margin: 0px auto; width: 113px;}
-.orgchart .vp {position: relative; display: block; text-align: center; border: 8px double #666; padding: 5px 10px; border-radius: 5px; background-color: #fff;}
-.orgchart li .vp {margin: 0px auto; width: 114px;}
-.orgchart .executive {position: relative; display: block; text-align: center; border: 5px double #666; padding: 5px 10px; border-radius: 5px; background-color: #fff;}
-.orgchart li .executive {margin: 0px auto; width: 150px;}
-.orgchart li li .executive {margin: 0px; width: 118px;}
-.orgchart .director {position: relative; display: block; text-align: center; border: 3px double #666; width: 124px; padding: 5px 10px; border-radius: 5px; background-color: #fff;}
-.orgchart li .director {margin: 0px auto; width: 154px;}
-.orgchart li li .director {margin: 0px; width: 122px;}
-.orgchart .manager {position: relative; display: block; text-align: center; border: 2px solid #666; margin: 0px; padding: 5px 10px; border-radius: 5px; background-color: #fff;}
-.orgchart li .manager {width: 156px;}
-.orgchart li li .manager {width: 124px;}
-.orgchart li li li .manager {width: 109px;}
-.orgchart li li li li .manager {width: 94px;}
-.orgchart .staff {position: relative; display: block; text-align: center; border: 1px solid #666; margin: 0px; padding: 5px 10px; border-radius: 5px; background-color: #fff;}
-.orgchart li .staff {width: 158px;}
-.orgchart li li .staff {width: 126px;}
-.orgchart li li li .staff {width: 111px;}
-.orgchart li li li li .staff {width: 96px;}
-.orgchart li li li li li  .staff {width: 81px;}
-.orgchart .group {position: relative; display: block; text-align: center; border: 1px solid #666; margin: 0px; padding: 5px; border-radius: 5px; background-color: #fff;}
-.orgchart li .group {width: 158px;}
-.orgchart li li .group {width: 126px;}
-.orgchart li li li .group {width: 120px;}
-.orgchart li li li li .group {width: 106px;}
-.orgchart li li li li li .group {width: 91px;}
-.orgchart .group .name a.stanfordwho {border-bottom: 1px dotted #81785a;}
-.orgchart .group .org {display: block; font-weight: bold;}
-.orgchart .group .org sup {font-weight: normal;}
-.orgchart .group ul {display: block; margin: 0px; padding: 0px;}
-.orgchart .group ul li {display: list-item; margin: 0px; padding: 0px; text-align: center; background-image: none;}
-.orgchart .group ul li:last-child {background-image: none;}
-.orgchart .group .name {display: block; border: none;}
-.orgchart .name {display: block; border-bottom: 1px solid #666;}
-.orgchart .role {display: block;}
-.orgchart .org {display: block; margin: 0px 5px;}
-.orgchart .suborg {display: block; margin: 1em 0px 0px 0px; font-weight: bold;}
-.orgchart .url {position: absolute; display: block; bottom: 0px; right: 0px; width: 15px; height: 15px;}
-.orgchart .url a {border: none;}
+/* line 17, ../sass/includes/_styles.scss */
+.orgchart .president {
+  position: relative;
+  display: block;
+  text-align: center;
+  border: 10px double #666666;
+  padding: 5px 10px;
+  border-radius: 5px;
+  background-color: white;
+}
+
+/* line 18, ../sass/includes/_styles.scss */
+.orgchart li .president {
+  margin: 0px auto;
+  width: 113px;
+}
+
+/* line 19, ../sass/includes/_styles.scss */
+.orgchart .vp {
+  position: relative;
+  display: block;
+  text-align: center;
+  border: 8px double #666666;
+  padding: 5px 10px;
+  border-radius: 5px;
+  background-color: white;
+}
+
+/* line 20, ../sass/includes/_styles.scss */
+.orgchart li .vp {
+  margin: 0px auto;
+  width: 114px;
+}
+
+/* line 21, ../sass/includes/_styles.scss */
+.orgchart .executive {
+  position: relative;
+  display: block;
+  text-align: center;
+  border: 5px double #666666;
+  padding: 5px 10px;
+  border-radius: 5px;
+  background-color: white;
+}
+
+/* line 22, ../sass/includes/_styles.scss */
+.orgchart li .executive {
+  margin: 0px auto;
+  width: 150px;
+}
+
+/* line 23, ../sass/includes/_styles.scss */
+.orgchart li li .executive {
+  margin: 0px;
+  width: 118px;
+}
+
+/* line 24, ../sass/includes/_styles.scss */
+.orgchart .director {
+  position: relative;
+  display: block;
+  text-align: center;
+  border: 3px double #666666;
+  width: 124px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  background-color: white;
+}
+
+/* line 25, ../sass/includes/_styles.scss */
+.orgchart li .director {
+  margin: 0px auto;
+  width: 154px;
+}
+
+/* line 26, ../sass/includes/_styles.scss */
+.orgchart li li .director {
+  margin: 0px;
+  width: 122px;
+}
+
+/* line 27, ../sass/includes/_styles.scss */
+.orgchart .manager {
+  position: relative;
+  display: block;
+  text-align: center;
+  border: 2px solid #666666;
+  margin: 0px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  background-color: white;
+}
+
+/* line 28, ../sass/includes/_styles.scss */
+.orgchart li .manager {
+  width: 156px;
+}
+
+/* line 29, ../sass/includes/_styles.scss */
+.orgchart li li .manager {
+  width: 124px;
+}
+
+/* line 30, ../sass/includes/_styles.scss */
+.orgchart li li li .manager {
+  width: 109px;
+}
+
+/* line 31, ../sass/includes/_styles.scss */
+.orgchart li li li li .manager {
+  width: 94px;
+}
+
+/* line 32, ../sass/includes/_styles.scss */
+.orgchart .staff {
+  position: relative;
+  display: block;
+  text-align: center;
+  border: 1px solid #666666;
+  margin: 0px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  background-color: white;
+}
+
+/* line 33, ../sass/includes/_styles.scss */
+.orgchart li .staff {
+  width: 158px;
+}
+
+/* line 34, ../sass/includes/_styles.scss */
+.orgchart li li .staff {
+  width: 126px;
+}
+
+/* line 35, ../sass/includes/_styles.scss */
+.orgchart li li li .staff {
+  width: 111px;
+}
+
+/* line 36, ../sass/includes/_styles.scss */
+.orgchart li li li li .staff {
+  width: 96px;
+}
+
+/* line 37, ../sass/includes/_styles.scss */
+.orgchart li li li li li .staff {
+  width: 81px;
+}
+
+/* line 38, ../sass/includes/_styles.scss */
+.orgchart .group {
+  position: relative;
+  display: block;
+  text-align: center;
+  border: 1px solid #666666;
+  margin: 0px;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: white;
+}
+
+/* line 39, ../sass/includes/_styles.scss */
+.orgchart li .group {
+  width: 158px;
+}
+
+/* line 40, ../sass/includes/_styles.scss */
+.orgchart li li .group {
+  width: 126px;
+}
+
+/* line 41, ../sass/includes/_styles.scss */
+.orgchart li li li .group {
+  width: 120px;
+}
+
+/* line 42, ../sass/includes/_styles.scss */
+.orgchart li li li li .group {
+  width: 106px;
+}
+
+/* line 43, ../sass/includes/_styles.scss */
+.orgchart li li li li li .group {
+  width: 91px;
+}
+
+/* line 44, ../sass/includes/_styles.scss */
+.orgchart .group .name a.stanfordwho {
+  border-bottom: 1px dotted #81785a;
+}
+
+/* line 45, ../sass/includes/_styles.scss */
+.orgchart .group .org {
+  display: block;
+  font-weight: bold;
+}
+
+/* line 46, ../sass/includes/_styles.scss */
+.orgchart .group .org sup {
+  font-weight: normal;
+}
+
+/* line 47, ../sass/includes/_styles.scss */
+.orgchart .group ul {
+  display: block;
+  margin: 0px;
+  padding: 0px;
+}
+
+/* line 48, ../sass/includes/_styles.scss */
+.orgchart .group ul li {
+  display: list-item;
+  margin: 0px;
+  padding: 0px;
+  text-align: center;
+  background-image: none;
+}
+
+/* line 49, ../sass/includes/_styles.scss */
+.orgchart .group ul li:last-child {
+  background-image: none;
+}
+
+/* line 50, ../sass/includes/_styles.scss */
+.orgchart .group .name {
+  display: block;
+  border: none;
+}
+
+/* line 51, ../sass/includes/_styles.scss */
+.orgchart .name {
+  display: block;
+  border-bottom: 1px solid #666666;
+}
+
+/* line 52, ../sass/includes/_styles.scss */
+.orgchart .role {
+  display: block;
+}
+
+/* line 53, ../sass/includes/_styles.scss */
+.orgchart .org {
+  display: block;
+  margin: 0px 5px;
+}
+
+/* line 54, ../sass/includes/_styles.scss */
+.orgchart .suborg {
+  display: block;
+  margin: 1em 0px 0px 0px;
+  font-weight: bold;
+}
+
+/* line 55, ../sass/includes/_styles.scss */
+.orgchart .url {
+  position: absolute;
+  display: block;
+  bottom: 0px;
+  right: 0px;
+  width: 15px;
+  height: 15px;
+}
+
+/* line 56, ../sass/includes/_styles.scss */
+.orgchart .url a {
+  border: none;
+}
 
 /* Key */
-ul.key {display: block; text-align: left; color: #3f3c30; margin: 2em 0 0 0; padding: 0;}
-ul.key li {display: block; list-style-type: none; list-style-image: none; margin: 0px; padding: 0px;}
+/* line 59, ../sass/includes/_styles.scss */
+ul.key {
+  display: block;
+  text-align: left;
+  color: #3f3c30;
+  margin: 2em 0 0 0;
+  padding: 0;
+}
+
+/* line 60, ../sass/includes/_styles.scss */
+ul.key li {
+  display: block;
+  list-style-type: none;
+  list-style-image: none;
+  margin: 0px;
+  padding: 0px;
+}
 
 /* Line connector behavior */
-.orgchart > ul.col1 li li {margin-top: 0px;}
-.orgchart > ul.col1 li ul {background-image: none; padding-top: 0px;}
-.orgchart > ul.col1 > li > ul:last-child {background-image: none; padding-top: 0px;}
+/* line 63, ../sass/includes/_styles.scss */
+.orgchart > ul.col1 li li {
+  margin-top: 0px;
+}
 
-.orgchart > ul > li > ul[class*=row] {background-image: url("../images/gray.gif"); background-position: top center; background-repeat: repeat-y; margin-left: -3px;}
+/* line 64, ../sass/includes/_styles.scss */
+.orgchart > ul.col1 li ul {
+  background-image: none;
+  padding-top: 0px;
+}
 
-.orgchart > ul > li > ul.row1 > li:first-child {margin-left: 155px;}
-.orgchart > ul > li > ul.row1 > li:nth-child(1) {background-image: url("../images/connect_row.gif");}
+/* line 65, ../sass/includes/_styles.scss */
+.orgchart > ul.col1 > li > ul:last-child {
+  background-image: none;
+  padding-top: 0px;
+}
 
-.orgchart > ul > li > ul.row2 > li:nth-child(2) {background-image: url("../images/connect_row.gif");}
+/* line 67, ../sass/includes/_styles.scss */
+.orgchart > ul > li > ul[class*=row] {
+  background-image: url("../images/gray.gif");
+  background-position: top center;
+  background-repeat: repeat-y;
+  margin-left: -3px;
+}
 
-.orgchart > ul > li > ul.row3 > li:first-child {margin-left: 156px;}
-.orgchart > ul > li > ul.row3:nth-child(2) > li:nth-child(3) {background-image: url("../images/connect_last.gif");}
-.orgchart > ul > li > ul.row3 > li:nth-child(2) {background-image: url("../images/connect_row.gif");}
+/* line 69, ../sass/includes/_styles.scss */
+.orgchart > ul > li > ul.row1 > li:first-child {
+  margin-left: 155px;
+}
 
-.orgchart > ul > li > ul.row4:nth-child(2) > li:nth-child(4) {background-image: url("../images/connect_last.gif");}
-.orgchart > ul > li > ul.row4 > li:nth-child(3) {background-image: url("../images/connect_row.gif");}
+/* line 70, ../sass/includes/_styles.scss */
+.orgchart > ul > li > ul.row1 > li:nth-child(1) {
+  background-image: url("../images/connect_row.gif");
+}
 
-.orgchart > ul > li > ul.row5 > li:last-child {margin-right: 156px;}
-.orgchart > ul > li > ul.row5:nth-child(2) > li:nth-child(5) {background-image: url("../images/connect_last.gif");}
-.orgchart > ul > li > ul.row5 > li:nth-child(4) {background-image: url("../images/connect_row.gif");}
+/* line 72, ../sass/includes/_styles.scss */
+.orgchart > ul > li > ul.row2 > li:nth-child(2) {
+  background-image: url("../images/connect_row.gif");
+}
 
-.orgchart > ul > li > ul.row6:nth-child(2) > li:nth-child(6) {background-image: url("../images/connect_last.gif");}
-.orgchart > ul > li > ul.row6 > li:nth-child(4) {background-image: url("../images/connect_row.gif");}
+/* line 74, ../sass/includes/_styles.scss */
+.orgchart > ul > li > ul.row3 > li:first-child {
+  margin-left: 156px;
+}
 
-.orgchart > ul > li > ul:last-child > li {margin-left: -2px;}
-.orgchart > ul > li > ul:last-child > li:nth-child(1) {background-image: url("../images/connect_last.gif");}
-.orgchart > ul > li > ul:last-child > li:nth-child(2) {background-image: url("../images/connect_last.gif");}
-.orgchart > ul > li > ul:last-child > li:nth-child(3) {background-image: url("../images/connect_last.gif");}
-.orgchart > ul > li > ul:last-child {background-image: url("../images/gray.gif"); background-position: top center; background-repeat: no-repeat;}
+/* line 75, ../sass/includes/_styles.scss */
+.orgchart > ul > li > ul.row3:nth-child(2) > li:nth-child(3) {
+  background-image: url("../images/connect_last.gif");
+}
+
+/* line 76, ../sass/includes/_styles.scss */
+.orgchart > ul > li > ul.row3 > li:nth-child(2) {
+  background-image: url("../images/connect_row.gif");
+}
+
+/* line 78, ../sass/includes/_styles.scss */
+.orgchart > ul > li > ul.row4:nth-child(2) > li:nth-child(4) {
+  background-image: url("../images/connect_last.gif");
+}
+
+/* line 79, ../sass/includes/_styles.scss */
+.orgchart > ul > li > ul.row4 > li:nth-child(3) {
+  background-image: url("../images/connect_row.gif");
+}
+
+/* line 81, ../sass/includes/_styles.scss */
+.orgchart > ul > li > ul.row5 > li:last-child {
+  margin-right: 156px;
+}
+
+/* line 82, ../sass/includes/_styles.scss */
+.orgchart > ul > li > ul.row5:nth-child(2) > li:nth-child(5) {
+  background-image: url("../images/connect_last.gif");
+}
+
+/* line 83, ../sass/includes/_styles.scss */
+.orgchart > ul > li > ul.row5 > li:nth-child(4) {
+  background-image: url("../images/connect_row.gif");
+}
+
+/* line 85, ../sass/includes/_styles.scss */
+.orgchart > ul > li > ul.row6:nth-child(2) > li:nth-child(6) {
+  background-image: url("../images/connect_last.gif");
+}
+
+/* line 86, ../sass/includes/_styles.scss */
+.orgchart > ul > li > ul.row6 > li:nth-child(4) {
+  background-image: url("../images/connect_row.gif");
+}
+
+/* line 88, ../sass/includes/_styles.scss */
+.orgchart > ul > li > ul:last-child > li {
+  margin-left: -2px;
+}
+
+/* line 89, ../sass/includes/_styles.scss */
+.orgchart > ul > li > ul:last-child > li:nth-child(1) {
+  background-image: url("../images/connect_last.gif");
+}
+
+/* line 90, ../sass/includes/_styles.scss */
+.orgchart > ul > li > ul:last-child > li:nth-child(2) {
+  background-image: url("../images/connect_last.gif");
+}
+
+/* line 91, ../sass/includes/_styles.scss */
+.orgchart > ul > li > ul:last-child > li:nth-child(3) {
+  background-image: url("../images/connect_last.gif");
+}
+
+/* line 92, ../sass/includes/_styles.scss */
+.orgchart > ul > li > ul:last-child {
+  background-image: url("../images/gray.gif");
+  background-position: top center;
+  background-repeat: no-repeat;
+}
 
 /* Mobile CSS */
 @media screen and (max-width: 979px) {
   /* IT Services Organization Charts */
-  .orgchart li {display: block; width: auto !important;}
-  .orgchart li ul {background-image: none !important;}
-  .orgchart > ul > li > ul > li {margin: 0px 0px 0px 10px !important;}
-  .orgchart li li {margin: 0px 0px 0px 10px; padding: 10px 0px 0px 10px; text-align: right; background-image: url("../images/connect.gif"); background-repeat: repeat-y; border-top: none;}
-  .orgchart li li:last-child {background-image: url("../images/connect_last.gif"); background-repeat: no-repeat; border-top: none; margin-right: 0px;}
-  .orgchart li li li {padding: 10px 0px 0px 10px;}
-  .orgchart .vp {margin: 0px; padding: 3px 10px; width: auto !important;}
-  .orgchart .executive {margin: 0px; padding: 3px 10px; width: auto !important;}
-  .orgchart .director {padding: 3px 10px; width: auto !important;}
-  .orgchart .manager {padding: 3px 10px; width: auto !important;}
-  .orgchart .staff {padding: 3px 10px; width: auto !important;}
-  .orgchart .group {padding: 3px 10px; width: auto !important;}
-  .orgchart .group ul li {display: inline-block !important; margin: 0px 5px; line-height: 15px; vertical-align: bottom;}
-  .orgchart .name {display: inline-block; margin: 0px; border-bottom: none;}
-  .orgchart .role {display: inline-block; margin: 0px;}
-  .orgchart .role:before {content: "(";}
-  .orgchart .role:after {content: ")";}
-  .orgchart .org {display: block; margin: 0px;}
-  .orgchart .suborg {display: block; margin: 0.5em 0px 0px 0px;}
-  
-  .orgchart > ul > li > ul[class*=row] > li:nth-child(1) {background-image: url("../images/connect.gif") !important;}
-  .orgchart > ul > li > ul[class*=row] > li:nth-child(2) {background-image: url("../images/connect.gif") !important;}
-  .orgchart > ul > li > ul[class*=row] > li:nth-child(3) {background-image: url("../images/connect.gif") !important;}
-  .orgchart > ul > li > ul[class*=row] > li:nth-child(4) {background-image: url("../images/connect.gif") !important;}
-  .orgchart > ul > li > ul[class*=row] > li:last-child {background-image: url("../images/connect.gif") !important;}
-  
-  .orgchart > ul > li > ul:last-child > li:nth-child(3) {background-image: url("../images/connect.gif") !important;}
-  .orgchart > ul > li > ul:last-child > li:last-child {background-image: url("../images/connect_last.gif") !important;}
-}
+  /* line 4, ../sass/includes/_mobile.scss */
+  .orgchart li {
+    display: block;
+    width: auto !important;
+  }
 
+  /* line 5, ../sass/includes/_mobile.scss */
+  .orgchart li ul {
+    background-image: none !important;
+  }
+
+  /* line 6, ../sass/includes/_mobile.scss */
+  .orgchart > ul > li > ul > li {
+    margin: 0px 0px 0px 10px !important;
+  }
+
+  /* line 7, ../sass/includes/_mobile.scss */
+  .orgchart li li {
+    margin: 0px 0px 0px 10px;
+    padding: 10px 0px 0px 10px;
+    text-align: right;
+    background-image: url("../images/connect.gif");
+    background-repeat: repeat-y;
+    border-top: none;
+  }
+
+  /* line 8, ../sass/includes/_mobile.scss */
+  .orgchart li li:last-child {
+    background-image: url("../images/connect_last.gif");
+    background-repeat: no-repeat;
+    border-top: none;
+    margin-right: 0px;
+  }
+
+  /* line 9, ../sass/includes/_mobile.scss */
+  .orgchart li li li {
+    padding: 10px 0px 0px 10px;
+  }
+
+  /* line 10, ../sass/includes/_mobile.scss */
+  .orgchart .vp {
+    margin: 0px;
+    padding: 3px 10px;
+    width: auto !important;
+  }
+
+  /* line 11, ../sass/includes/_mobile.scss */
+  .orgchart .executive {
+    margin: 0px;
+    padding: 3px 10px;
+    width: auto !important;
+  }
+
+  /* line 12, ../sass/includes/_mobile.scss */
+  .orgchart .director {
+    padding: 3px 10px;
+    width: auto !important;
+  }
+
+  /* line 13, ../sass/includes/_mobile.scss */
+  .orgchart .manager {
+    padding: 3px 10px;
+    width: auto !important;
+  }
+
+  /* line 14, ../sass/includes/_mobile.scss */
+  .orgchart .staff {
+    padding: 3px 10px;
+    width: auto !important;
+  }
+
+  /* line 15, ../sass/includes/_mobile.scss */
+  .orgchart .group {
+    padding: 3px 10px;
+    width: auto !important;
+  }
+
+  /* line 16, ../sass/includes/_mobile.scss */
+  .orgchart .group ul li {
+    display: inline-block !important;
+    margin: 0px 5px;
+    line-height: 15px;
+    vertical-align: bottom;
+  }
+
+  /* line 17, ../sass/includes/_mobile.scss */
+  .orgchart .name {
+    display: inline-block;
+    margin: 0px;
+    border-bottom: none;
+  }
+
+  /* line 18, ../sass/includes/_mobile.scss */
+  .orgchart .role {
+    display: inline-block;
+    margin: 0px;
+  }
+
+  /* line 19, ../sass/includes/_mobile.scss */
+  .orgchart .role:before {
+    content: "(";
+  }
+
+  /* line 20, ../sass/includes/_mobile.scss */
+  .orgchart .role:after {
+    content: ")";
+  }
+
+  /* line 21, ../sass/includes/_mobile.scss */
+  .orgchart .org {
+    display: block;
+    margin: 0px;
+  }
+
+  /* line 22, ../sass/includes/_mobile.scss */
+  .orgchart .suborg {
+    display: block;
+    margin: 0.5em 0px 0px 0px;
+  }
+
+  /* line 24, ../sass/includes/_mobile.scss */
+  .orgchart > ul > li > ul[class*=row] > li:nth-child(1) {
+    background-image: url("../images/connect.gif") !important;
+  }
+
+  /* line 25, ../sass/includes/_mobile.scss */
+  .orgchart > ul > li > ul[class*=row] > li:nth-child(2) {
+    background-image: url("../images/connect.gif") !important;
+  }
+
+  /* line 26, ../sass/includes/_mobile.scss */
+  .orgchart > ul > li > ul[class*=row] > li:nth-child(3) {
+    background-image: url("../images/connect.gif") !important;
+  }
+
+  /* line 27, ../sass/includes/_mobile.scss */
+  .orgchart > ul > li > ul[class*=row] > li:nth-child(4) {
+    background-image: url("../images/connect.gif") !important;
+  }
+
+  /* line 28, ../sass/includes/_mobile.scss */
+  .orgchart > ul > li > ul[class*=row] > li:last-child {
+    background-image: url("../images/connect.gif") !important;
+  }
+
+  /* line 30, ../sass/includes/_mobile.scss */
+  .orgchart > ul > li > ul:last-child > li:nth-child(3) {
+    background-image: url("../images/connect.gif") !important;
+  }
+
+  /* line 31, ../sass/includes/_mobile.scss */
+  .orgchart > ul > li > ul:last-child > li:last-child {
+    background-image: url("../images/connect_last.gif") !important;
+  }
+}
 /* Print CSS */
 @media print {
-  .orgchart {font-size: 10px; background: #fff; position: absolute; top: 0; left: 0; width: 100%; height: 50%; z-index: 50;}
-  .orgchart li {line-height: 15px;}
-  .orgchart li img {display: none;}
-  .orgchart li a {border: none;}
-  .orgchart li div {padding: 2px 7px !important;}
-  .orgchart li .group {padding: 2px 2px !important;}
-  .orgchart li .vp {width: 114px;}
-  .orgchart li .executive {width: 120px;}
-  .orgchart li li .executive {width: 88px;}
-  .orgchart .director {width: 94px;}
-  .orgchart li .director {width: 124px;}
-  .orgchart li li .director {width: 92px;}
-  .orgchart li .manager {width: 126px;}
-  .orgchart li li .manager {width: 94px;}
-  .orgchart li li li .manager {width: 79px;}
-  .orgchart li li li li .manager {width: 64px;}
-  .orgchart li .staff {width: 128px;}
-  .orgchart li li .staff {width: 96px;}
-  .orgchart li li li .staff {width: 81px;}
-  .orgchart li li li li .staff {width: 66px;}
-  .orgchart li li li li li .staff {width: 51px;}
-  .orgchart li .group {width: 128px;}
-  .orgchart li li .group {width: 96px;}
-  .orgchart li li li .group {width: 90px;}
-  .orgchart li li li li .group {width: 76px;}
-  .orgchart li li li li li .group {width: 61px;}
-  .orgchart > ul > li > ul.row1 > li:last-child {margin-right: 116px;}
-  .orgchart > ul > li > ul.row3 > li:last-child {margin-right: 116px;}
-  .orgchart > ul > li > ul.row5 > li:last-child {margin-right: 116px;}
-  
-  ul.key {font-size: 10px;}
+  /* line 3, ../sass/includes/_print.scss */
+  .orgchart {
+    font-size: 10px;
+    background: white;
+  }
+
+  /* line 4, ../sass/includes/_print.scss */
+  .orgchart li {
+    line-height: 15px;
+  }
+
+  /* line 5, ../sass/includes/_print.scss */
+  .orgchart li img {
+    display: none;
+  }
+
+  /* line 6, ../sass/includes/_print.scss */
+  .orgchart li a {
+    border: none;
+  }
+
+  /* line 7, ../sass/includes/_print.scss */
+  .orgchart li div {
+    padding: 2px 7px !important;
+  }
+
+  /* line 8, ../sass/includes/_print.scss */
+  .orgchart li .group {
+    padding: 2px 2px !important;
+  }
+
+  /* line 9, ../sass/includes/_print.scss */
+  .orgchart li .vp {
+    width: 114px;
+  }
+
+  /* line 10, ../sass/includes/_print.scss */
+  .orgchart li .executive {
+    width: 120px;
+  }
+
+  /* line 11, ../sass/includes/_print.scss */
+  .orgchart li li .executive {
+    width: 88px;
+  }
+
+  /* line 12, ../sass/includes/_print.scss */
+  .orgchart .director {
+    width: 94px;
+  }
+
+  /* line 13, ../sass/includes/_print.scss */
+  .orgchart li .director {
+    width: 124px;
+  }
+
+  /* line 14, ../sass/includes/_print.scss */
+  .orgchart li li .director {
+    width: 92px;
+  }
+
+  /* line 15, ../sass/includes/_print.scss */
+  .orgchart li .manager {
+    width: 126px;
+  }
+
+  /* line 16, ../sass/includes/_print.scss */
+  .orgchart li li .manager {
+    width: 94px;
+  }
+
+  /* line 17, ../sass/includes/_print.scss */
+  .orgchart li li li .manager {
+    width: 79px;
+  }
+
+  /* line 18, ../sass/includes/_print.scss */
+  .orgchart li li li li .manager {
+    width: 64px;
+  }
+
+  /* line 19, ../sass/includes/_print.scss */
+  .orgchart li .staff {
+    width: 128px;
+  }
+
+  /* line 20, ../sass/includes/_print.scss */
+  .orgchart li li .staff {
+    width: 96px;
+  }
+
+  /* line 21, ../sass/includes/_print.scss */
+  .orgchart li li li .staff {
+    width: 81px;
+  }
+
+  /* line 22, ../sass/includes/_print.scss */
+  .orgchart li li li li .staff {
+    width: 66px;
+  }
+
+  /* line 23, ../sass/includes/_print.scss */
+  .orgchart li li li li li .staff {
+    width: 51px;
+  }
+
+  /* line 24, ../sass/includes/_print.scss */
+  .orgchart li .group {
+    width: 128px;
+  }
+
+  /* line 25, ../sass/includes/_print.scss */
+  .orgchart li li .group {
+    width: 96px;
+  }
+
+  /* line 26, ../sass/includes/_print.scss */
+  .orgchart li li li .group {
+    width: 90px;
+  }
+
+  /* line 27, ../sass/includes/_print.scss */
+  .orgchart li li li li .group {
+    width: 76px;
+  }
+
+  /* line 28, ../sass/includes/_print.scss */
+  .orgchart li li li li li .group {
+    width: 61px;
+  }
+
+  /* line 29, ../sass/includes/_print.scss */
+  .orgchart > ul > li > ul.row1 > li:last-child {
+    margin-right: 116px;
+  }
+
+  /* line 30, ../sass/includes/_print.scss */
+  .orgchart > ul > li > ul.row3 > li:last-child {
+    margin-right: 116px;
+  }
+
+  /* line 31, ../sass/includes/_print.scss */
+  .orgchart > ul > li > ul.row5 > li:last-child {
+    margin-right: 116px;
+  }
+
+  /* line 33, ../sass/includes/_print.scss */
+  ul.key {
+    font-size: 10px;
+  }
 }

@@ -1,0 +1,92 @@
+/* General */
+.orgchart {font-size: 1em; line-height: 1.6em; margin: 0px auto; padding: 0px; text-align: center; color: $clr-text; width: auto;}
+.orgchart a:hover, .orgchart a:active {color: #820000;}
+.orgchart .name a {color: #565347; text-decoration: none; border: none;}
+.orgchart .name a:hover, .orgchart .name a:active {color: #820000;}
+.orgchart img {border: none;}
+.orgchart ul {margin: 0px; padding: 0px; background-image: none;}
+.orgchart li {display: inline-block; list-style-type: none; list-style-image: none; margin: 0px; padding: 0px; vertical-align: top; zoom: 1; *display: inline;}
+.orgchart li ul {background-image: url("../images/gray.gif"); background-position: top center; background-repeat: no-repeat;}
+.orgchart li li {margin: 10px -1px 0px -3px; padding: 10px 5px 10px 5px; text-align: right; background-image: url("../images/connect_last.gif"); background-position: top left; background-repeat: no-repeat; border-top: 1px solid $clr-dark;}
+.orgchart li > ul > li:last-child {border-top: none;}
+.orgchart li li ul {margin: 0px; padding: 0px 0px 0px 10px; background-image: none;}
+.orgchart li li li {display: list-item; margin: 0px; padding: 10px 0px 0px 5px; text-align: right; background-image: url("../images/connect.gif"); background-position: top left; background-repeat: no-repeat; border-top: none;}
+.orgchart li li li:last-child {background-image: url("../images/connect_last.gif"); background-position: top left; background-repeat: repeat-y; border-top: none;}
+
+/* Roles, Group, Organization, URL */
+.orgchart .president {position: relative; display: block; text-align: center; border: 10px double $clr-dark; padding: 5px 10px; border-radius: 5px; background-color: $clr-light;}
+.orgchart li .president {margin: 0px auto; width: 113px;}
+.orgchart .vp {position: relative; display: block; text-align: center; border: 8px double $clr-dark; padding: 5px 10px; border-radius: 5px; background-color: $clr-light;}
+.orgchart li .vp {margin: 0px auto; width: 114px;}
+.orgchart .executive {position: relative; display: block; text-align: center; border: 5px double $clr-dark; padding: 5px 10px; border-radius: 5px; background-color: $clr-light;}
+.orgchart li .executive {margin: 0px auto; width: 150px;}
+.orgchart li li .executive {margin: 0px; width: 118px;}
+.orgchart .director {position: relative; display: block; text-align: center; border: 3px double $clr-dark; width: 124px; padding: 5px 10px; border-radius: 5px; background-color: $clr-light;}
+.orgchart li .director {margin: 0px auto; width: 154px;}
+.orgchart li li .director {margin: 0px; width: 122px;}
+.orgchart .manager {position: relative; display: block; text-align: center; border: 2px solid $clr-dark; margin: 0px; padding: 5px 10px; border-radius: 5px; background-color: $clr-light;}
+.orgchart li .manager {width: 156px;}
+.orgchart li li .manager {width: 124px;}
+.orgchart li li li .manager {width: 109px;}
+.orgchart li li li li .manager {width: 94px;}
+.orgchart .staff {position: relative; display: block; text-align: center; border: 1px solid $clr-dark; margin: 0px; padding: 5px 10px; border-radius: 5px; background-color: $clr-light;}
+.orgchart li .staff {width: 158px;}
+.orgchart li li .staff {width: 126px;}
+.orgchart li li li .staff {width: 111px;}
+.orgchart li li li li .staff {width: 96px;}
+.orgchart li li li li li  .staff {width: 81px;}
+.orgchart .group {position: relative; display: block; text-align: center; border: 1px solid $clr-dark; margin: 0px; padding: 5px; border-radius: 5px; background-color: $clr-light;}
+.orgchart li .group {width: 158px;}
+.orgchart li li .group {width: 126px;}
+.orgchart li li li .group {width: 120px;}
+.orgchart li li li li .group {width: 106px;}
+.orgchart li li li li li .group {width: 91px;}
+.orgchart .group .name a.stanfordwho {border-bottom: 1px dotted #81785a;}
+.orgchart .group .org {display: block; font-weight: bold;}
+.orgchart .group .org sup {font-weight: normal;}
+.orgchart .group ul {display: block; margin: 0px; padding: 0px;}
+.orgchart .group ul li {display: list-item; margin: 0px; padding: 0px; text-align: center; background-image: none;}
+.orgchart .group ul li:last-child {background-image: none;}
+.orgchart .group .name {display: block; border: none;}
+.orgchart .name {display: block; border-bottom: 1px solid $clr-dark;}
+.orgchart .role {display: block;}
+.orgchart .org {display: block; margin: 0px 5px;}
+.orgchart .suborg {display: block; margin: 1em 0px 0px 0px; font-weight: bold;}
+.orgchart .url {position: absolute; display: block; bottom: 0px; right: 0px; width: 15px; height: 15px;}
+.orgchart .url a {border: none;}
+
+/* Key */
+ul.key {display: block; text-align: left; color: $clr-text; margin: 2em 0 0 0; padding: 0;}
+ul.key li {display: block; list-style-type: none; list-style-image: none; margin: 0px; padding: 0px;}
+
+/* Line connector behavior */
+.orgchart > ul.col1 li li {margin-top: 0px;}
+.orgchart > ul.col1 li ul {background-image: none; padding-top: 0px;}
+.orgchart > ul.col1 > li > ul:last-child {background-image: none; padding-top: 0px;}
+
+.orgchart > ul > li > ul[class*=row] {background-image: url("../images/gray.gif"); background-position: top center; background-repeat: repeat-y; margin-left: -3px;}
+
+.orgchart > ul > li > ul.row1 > li:first-child {margin-left: 155px;}
+.orgchart > ul > li > ul.row1 > li:nth-child(1) {background-image: url("../images/connect_row.gif");}
+
+.orgchart > ul > li > ul.row2 > li:nth-child(2) {background-image: url("../images/connect_row.gif");}
+
+.orgchart > ul > li > ul.row3 > li:first-child {margin-left: 156px;}
+.orgchart > ul > li > ul.row3:nth-child(2) > li:nth-child(3) {background-image: url("../images/connect_last.gif");}
+.orgchart > ul > li > ul.row3 > li:nth-child(2) {background-image: url("../images/connect_row.gif");}
+
+.orgchart > ul > li > ul.row4:nth-child(2) > li:nth-child(4) {background-image: url("../images/connect_last.gif");}
+.orgchart > ul > li > ul.row4 > li:nth-child(3) {background-image: url("../images/connect_row.gif");}
+
+.orgchart > ul > li > ul.row5 > li:last-child {margin-right: 156px;}
+.orgchart > ul > li > ul.row5:nth-child(2) > li:nth-child(5) {background-image: url("../images/connect_last.gif");}
+.orgchart > ul > li > ul.row5 > li:nth-child(4) {background-image: url("../images/connect_row.gif");}
+
+.orgchart > ul > li > ul.row6:nth-child(2) > li:nth-child(6) {background-image: url("../images/connect_last.gif");}
+.orgchart > ul > li > ul.row6 > li:nth-child(4) {background-image: url("../images/connect_row.gif");}
+
+.orgchart > ul > li > ul:last-child > li {margin-left: -2px;}
+.orgchart > ul > li > ul:last-child > li:nth-child(1) {background-image: url("../images/connect_last.gif");}
+.orgchart > ul > li > ul:last-child > li:nth-child(2) {background-image: url("../images/connect_last.gif");}
+.orgchart > ul > li > ul:last-child > li:nth-child(3) {background-image: url("../images/connect_last.gif");}
+.orgchart > ul > li > ul:last-child {background-image: url("../images/gray.gif"); background-position: top center; background-repeat: no-repeat;}
